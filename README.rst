@@ -68,7 +68,7 @@ suffixes of some words.
 
 You can see other punctuation from the .el file itself. 
 
-The file is downloadable from `Teknokrat's github page <https://github.org/teknokrat-as/ottoman-el/>`_
+The file is downloadable from `Teknokrat's github page <http://github.org/teknokrat-as/ottoman-el/>`_
 
 
 .. _`an input method for Farsi`: http://www.persoarabic.org/content/generated/doc.free/mohsen/PLPC/120036/current/accessPage
