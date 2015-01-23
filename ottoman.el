@@ -338,9 +338,9 @@
 
          ;; Following three are used to separate the letters normally joining. 
          ;; Like ه at the end of كلمه 
-         ("&zwnj;" . "\u200C") ("\u200C" . "&zwnj;") ;; (ucs-insert #x200C)‌   
+         ("&zwnj;" . "\u200C") ;; (ucs-insert #x200C)‌   
          ("||" . "\u200C") ("\u200C" . "||")      ;;
-         ("<>" . "\u200C") ("\u200C" . "<>")      ;;
+         ("<>" . "\u200C")       ;;
          ("&zwj;" . "\u200D") ("\u200D" . "&zwj;")  ;; (ucs-insert #x200D)‍   
          ("><" . "\u200D") ("\u200D" . "><")     ;;
          ("&lrm;" . "\u200E") ("\u200E" . "&lrm;")  ;; (ucs-insert #x200E)‎   
