@@ -375,7 +375,8 @@
          ("\\#" . "#") ("#" . "\\#")
          ("\\^" . "^") ("^" . "\\^")
          ("\\|" . "|") ("|" . "\\|")
-         ("إ" . "eu5")
+         ("إ" . "eu5") (" " . " ")
+         ("'" . "'") 
          ))
 
 
@@ -397,7 +398,8 @@
    ((and (>= (length inputstr) 1) (assoc (substring inputstr 0 1) ottoman-translation-table))
     (concat (cdr (assoc (substring inputstr 0 1) ottoman-translation-table)) 
             (translate-string-ottoman-turkish (substring inputstr 1))))
-   (t (concat (substring inputstr 0 1) (translate-string-ottoman-turkish (substring inputstr 1))))))
+   (t (progn (message (concat "No translation for " (substring inputstr 0 1)))
+             (concat (substring inputstr 0 1) (translate-string-ottoman-turkish (substring inputstr 1)))))))
          
 (defun convert-ottoman-turkish (start end)
   (interactive "r")
